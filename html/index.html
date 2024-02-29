@@ -5,61 +5,108 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>월하의 자기소개 😆</title>
+  <link rel="stylesheet" href="../css/styles.css" />
 </head>
 
 <body>
 
-  <div>
+  <div class="con-lv1">
     <!-- 자기소개 -->
-    <div>
+    <div class="con-lv2">
       <h2>자기소개</h2>
-      <ul>
-        <li>이름 : 월하(vi-wolhwa)</li>
+
+      <ul class="con-li-introduce">
+        <li>이름 : 월하 (vi-wolhwa)</li>
         <li>사는 곳 : 동대문구</li>
-        <li>안녕하세요🙂 저는 월하입니다. 이번 연휴에는 친구들이랑 별장으로 여행을 가기로 했어요! 그럼 20000🖐️</li>
+        <li>안녕하세요! 저는 월하입니다! 내일 친구들과 별장으로 1박2일 여행을 갑니다! 좋겠죠?</li>
       </ul>
     </div>
 
-    <!-- 인생 영화 -->
-    <div>
-      <h2>인생 영화 BEST5</h2>
-      <table>
-        <th>순위</th>
-        <th>제목</th>
-        <th>포스터</th>
-        <th>줄거리</th>
-        <th>바로가기</th>
+    <hr>
 
-        <!-- 영화 정보 레이블 삽입 위치 -->
-        <div></div>
+    <!-- 인생 영화 -->
+    <div class="con-lv2">
+      <h2>인생 영화 BEST5</h2>
+
+      <table style="width: 100%;">
+        <th style="width: 5%;">순위</th>
+        <th style="width: 20%;">제목</th>
+        <th style="width: 10%;">포스터</th>
+        <th style="width: 50%;">줄거리</th>
+        <th style="width: 15%;">바로가기</th>
+
+        <div class="con-tr-best-movies"></div>
+        <tr>
+          <td>1</td>
+          <td>인터스텔라</td>
+          <td><img src="../images/인터스텔라.jpeg"></td>
+          <td>폭풍을 부르는 부르는 침묵의 중력 방정식</td>
+          <td><a href="https://serieson.naver.com/v2/movie/85586">바로가기</a></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>쥬라기월드</td>
+          <td><img src="../images/쥬라기월드.jpeg"></td>
+          <td>폭풍을 부르는 장엄한 전투:공룡vs인간</td>
+          <td><a href="https://serieson.naver.com/v2/movie/85586">바로가기</a></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>귀멸의칼날</td>
+          <td><img src="../images/귀멸의칼날.jpeg"></td>
+          <td>폭풍을 부르는 시초의 호흡:히노카미 카구라</td>
+          <td><a href="https://serieson.naver.com/v2/movie/85586">바로가기</a></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>레지던트 이블</td>
+          <td><img src="../images/레지던트이블.jpeg"></td>
+          <td>폭풍을 부르는 뭔내용이더라</td>
+          <td><a href="https://serieson.naver.com/v2/movie/85586">바로가기</a></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>찰리와 초콜릿 공장</td>
+          <td><img src="../images/찰리와초콜릿공장.jpeg"></td>
+          <td>폭풍을 부르는 대기업 CEO 면접</td>
+          <td><a href="https://serieson.naver.com/v2/movie/85586">바로가기</a></td>
+        </tr>
       </table>
     </div>
 
+    <hr>
+
     <!-- 방명록 -->
-    <div>
+    <div class="con-lv2">
       <h2>방명록</h2>
 
-      <form>
+      <form class="form-guestbook">
         <div>
-          <label for="">이름 :</label>
-          <input type="text">
+          <label>이름 :</label>
+          <input type="text" class="inp-guestbook-name">
         </div>
 
         <div>
           <label>본인 취향 영화</label>
 
-          <!-- 영화 정보 체크박스 삽입 위치 -->
-          <div></div>
+          <div class="con-inp-checkbox-movie">
+            <input type="checkbox" class="checkbox">인터스텔라
+            <input type="checkbox" class="checkbox">쥬라기월드
+            <input type="checkbox" class="checkbox">귀멸의칼날
+            <input type="checkbox" class="checkbox">레지던트이블
+            <input type="checkbox" class="checkbox">찰리와초콜릿공장
+          </div>
         </div>
 
         <div>
-          <button type="button">등록</button>
-          <button type="reset">취소</button>
+          <button type="button" class="btn-submit-guestbook">등록</button>
+          <button type="reset" class="btn-cancel-guestbook">취소</button>
         </div>
       </form>
     </div>
   </div>
 
+  <script src="../js/index.js"></script>
 </body>
 
 </html>
